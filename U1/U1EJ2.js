@@ -65,8 +65,12 @@ let planets = [
         }
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+function ringedPlanets(planet) {
+    return planet.hasRings;
+}
 
-
+const result = planets.filter(ringedPlanets);
+console.log(result);
 
 /**
  * TEST
