@@ -15,8 +15,11 @@
 */
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+function rangeOfNumbers(n) {
+	return n == 0 ? 0 : (n + rangeOfNumbers(n-1));
+}
 
-
+console.log(rangeOfNumbers(4));
 
 
 /**

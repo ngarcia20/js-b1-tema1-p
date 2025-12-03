@@ -12,14 +12,25 @@
 	rebut com a paràmetre amb tots els números senars que hi ha entre zero i el nombre rebut (amb aquest inclòs) com a paràmetre.
 	Per exemple sent myArray un Array buit, la crida a la funció oddNumbers(7, myArray) tornaria myArray amb els valors [7, 5, 3, 1]
 */
+
+//Escribe aquí tu solución / escriviu aquí la vostra solució:
+function oddNumbers(n, table) {
+	if (n < 1) {
+        return;
+    }
+	
+	if (n % 2 != 0) {
+		table.push(n);
+	}
+
+	oddNumbers(n-1, table);
+}
+
 //Do not modify this code:
 let myArray = new Array();
 oddNumbers(7, myArray);
 
-//Escribe aquí tu solución / escriviu aquí la vostra solució:
-
-
-
+console.log(myArray);
 
 /**
  * TEST
