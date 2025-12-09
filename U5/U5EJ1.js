@@ -60,9 +60,13 @@ const classroomStudents = [
 ];
  
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
+const letterGrade = student => 
+  student.averageGrade >= 9.0 ? 'A' :
+  student.averageGrade >= 8.0 ? 'B' :
+  student.averageGrade >= 3.0 ? 'C' : 'D';
 
-
-
+let result = classroomStudents.map(letterGrade);
+console.log(result);
 
 /**
  * TEST
